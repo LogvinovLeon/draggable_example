@@ -1,0 +1,22 @@
+.draggable {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    transition: top 1s ease-in-out, left 1s ease-in-out;
+    -o-transition: top 1s ease-in-out, left 1s ease-in-out;
+    -moz-transition: top 1s ease-in-out, left 1s ease-in-out;
+    -webkit-transition: top 1s ease-in-out, left 1s ease-in-out;
+}
+
+.draggable.dragging {
+    -webkit-box-shadow: 10px 10px 10px 0 gray;
+    -moz-box-shadow: 10px 10px 10px 0 gray;
+    box-shadow: 10px 10px 10px 0 gray;
+    transition: top 0s ease-in-out, left 0s ease-in-out;
+    -o-transition: top 0s ease-in-out, left 0s ease-in-out;
+    -moz-transition: top 0s ease-in-out, left 0s ease-in-out;
+    -webkit-transition: top 0s ease-in-out, left 0s ease-in-out;
+}
